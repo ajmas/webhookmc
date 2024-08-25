@@ -1,0 +1,11 @@
+name: DiscordWebhook
+version: 2.0.0
+api-version: 1.18
+description: This plugin sends a message to a Discord Webhook
+author: Artuto
+website: artuto.tk
+main: me.artuto.discordwebhook.Webhook
+commands:
+ discordmc:
+   description: Main command
+   usage: Use /discordmc help
