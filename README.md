@@ -1,6 +1,6 @@
 # WebhookMC
 
-** Code in Alpha State, ignore docs for now **
+<span style="color: red">**Code in Alpha State, ignore docs for now**</span>
 
 This a rewrite of [Artuto's DiscordWebhook](https://www.spigotmc.org/resources/discord-webhook.51537/), with the goal of supporting
 both Forge and Bukkit based servers.
@@ -49,20 +49,24 @@ in the Discord channel you created the webhook for.
 
 A sample configuration looks as follows:
 
-```yaml
-ipCheckUrl: https://api.ipify.org
-webhookUrl: https://canary.discordapp.com/api/webhooks
-externalPort: 25565
-serverName: My Server Name
-enabledEvents:
- - playerJoin
- - playerQuit
- - externalIP
- - pluginDisable
- - pluginEnable
-enabledCommands:
- - msg
- - location-msg
+```json
+{
+  "ipCheckUrl": "https://api.ipify.org",
+  "webhookUrl": "https://canary.discordapp.com/api/webhooks",
+  "externalPort": 25565,
+  "serverName": "My Server Name",
+  "enabledEvents": [
+    "playerJoin",
+    "playerQuit",
+    "externalIP",
+    "pluginDisable",
+    "pluginEnable"
+  ],
+  "enabledCommands": [
+    "msg",
+    "location-msg"
+  ]
+}
 ```
 
 The settings are as follows:
